@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="NULL THEORY — modern uniform, reduced to form.">
+  <title>NULL THEORY — Drop 001</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="interaction.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true"><div class="mark"><i></i><i></i></div><span>NULL THEORY</span></div>
+  <header>
+    <button class="menu-button" aria-label="Open menu">Menu</button>
+    <nav class="left-nav"><a href="#shop">Shop</a><a href="#campaign">Campaign</a><a href="#about">Theory</a></nav>
+    <a class="logo" href="#top" aria-label="NULL THEORY home"><span>N</span><i></i><span>T</span></a>
+    <nav class="right-nav"><a href="#">Search</a><a href="#">Account</a><button class="bag">Bag (<b id="bag-count">0</b>)</button></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="campaign">
+      <img src="assets/pink-campaign.png" alt="Three models wearing vivid pink NULL THEORY tracksuits">
+      <div class="hero-shade"></div>
+      <div class="model-interaction" aria-label="Interactive campaign models">
+        <button class="model-zone zone-one" aria-label="Spotlight the front-facing model"></button>
+        <button class="model-zone zone-two" aria-label="Spotlight the profile model"></button>
+        <button class="model-zone zone-three" aria-label="Spotlight the back-facing model"></button>
+        <div class="model-focus focus-one"><img src="assets/pink-campaign.png" alt=""></div>
+        <div class="model-focus focus-two"><img src="assets/pink-campaign.png" alt=""></div>
+        <div class="model-focus focus-three"><img src="assets/pink-campaign.png" alt=""></div>
+      </div>
+      <span class="hover-note">Move over a silhouette</span>
+      <div class="drop-code">NT—001<br>AW / 26</div>
+      <div class="hero-copy"><p>Uniform studies / Volume one</p><h1>NEW DROP<br>OUT NOW.</h1><a href="#shop">Shop the release <span>→</span></a></div>
+      <div class="hero-index"><b>01</b><span>/03</span></div>
+    </section>
+
+    <div class="ticker"><div><span>NULL THEORY</span><i>◆</i><span>DROP 001</span><i>◆</i><span>FORM FOLLOWS MOVEMENT</span><i>◆</i><span>WORLDWIDE SHIPPING</span><i>◆</i><span>NULL THEORY</span><i>◆</i><span>DROP 001</span><i>◆</i></div></div>
+
+    <section class="arrivals" id="shop">
+      <div class="section-line"><h2>New Arrivals</h2><span>03 pieces</span><button id="view-toggle">Compact view</button></div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="manifesto" id="about">
+      <span>THEORY 01</span>
+      <h2>Clothing without<br>the <em>noise.</em></h2>
+      <p>NULL THEORY builds a modular wardrobe through proportion, weight, and movement. Every piece is designed to stand alone, layer easily, and outlast the drop.</p>
+      <a href="#shop">Explore Drop 001 →</a>
+    </section>
+
+    <section class="campaign-grid">
+      <figure><img src="assets/pink-campaign.png" alt="Pink uniform campaign"><figcaption>Uniform Study / Magenta</figcaption></figure>
+      <figure class="dark"><img src="assets/olive-bomber.png" alt="Olive reversible bomber jacket"><figcaption>Object Study / Reversible Shell</figcaption></figure>
+    </section>
+
+    <section class="newsletter"><span>Updates without excess.</span><form id="newsletter-form"><input type="email" placeholder="EMAIL ADDRESS" aria-label="Email address" required><button>Join</button></form><small id="message"></small></section>
+  </main>
+
+  <footer><a class="logo" href="#top"><span>N</span><i></i><span>T</span></a><p>Original concept by Micah SEO Solutions.</p><div><a href="#">Instagram</a><a href="#">Terms</a><span>©2026</span></div></footer>
+
+  <dialog id="product-dialog">
+    <button class="close" aria-label="Close">×</button>
+    <div class="dialog-image"><img id="dialog-image" src="" alt=""></div>
+    <div class="dialog-copy"><span id="dialog-code"></span><h2 id="dialog-name"></h2><p id="dialog-description"></p><strong id="dialog-price"></strong><div class="sizes" id="sizes"><button>S</button><button>M</button><button>L</button><button>XL</button></div><button class="add-button" id="dialog-add">Add to bag</button><small>Free shipping over $150 · 14-day returns</small></div>
+  </dialog>
+  <div class="toast" id="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
